@@ -1,0 +1,29 @@
+{%extends "public.html"%}
+
+{%block content%}
+
+<div class="container">
+    <div class="row mx-auto row-cols-1 row-cols-md-3 g-4">
+        {%for menu in menus%}
+
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://imgs.search.brave.com/77rHuvPaV191-zYv4ahj-PzCM4zWivDLmfx3kVrFbXc/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/cGFyYW1vdW50MjEu/Y28udWsvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTgvMDYvQXJv/bWF0aWMtR2FyZGVu/LUJ1cmdlci1QaG90/by0zLTMuanBn"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{menu.title}}</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add more cards here -->
+        {%endfor%}
+
+    </div>
+
+</div>
+
+
+
+{%endblock%}
